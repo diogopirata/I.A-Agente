@@ -485,7 +485,7 @@ st.markdown("---")
 col1, col2 = st.columns(2)
 
 with col1:
-    if st.button("🚀 Gerar Análise Inteligente", type="primary"):
+    if st.button("🚀 Gerar Análise Inteligente Agente", type="primary"):
         gerar_analise()
 
 with col2:
@@ -507,7 +507,7 @@ if st.session_state.get('show_question_input', False):
     
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        if st.button("🔍 Analisar com Pergunta", type="primary"):
+        if st.button("🔍 Analisar com Pergunta Agente", type="primary"):
             if user_question:
                 gerar_analise(user_question)
                 st.session_state.show_question_input = False
